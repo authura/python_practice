@@ -15,4 +15,4 @@ try:
 
 except:
 
-    print("Invalid input. Please enter a number.")
+    print("Invalid input. Please enter a number.\n")
