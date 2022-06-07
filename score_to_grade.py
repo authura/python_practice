@@ -1,8 +1,4 @@
-
-
-try:
-    score = float(input("Enter score between 0.0 and 1.0:\n"))
-
+def compute_grade(score):
     if score > 1 or score < 0:
         print("Input out of range.")
         quit()
@@ -16,8 +12,17 @@ try:
         grade = 'D'
     else:
         grade = 'F'
+    return grade
 
+
+try:
+
+    score = float(input("Enter score between 0.0 and 1.0:\n"))
+
+    grade = compute_grade(score)
 
     print(f"Grade: {grade}")
+
 except:
+
     print("Invalid input.")
