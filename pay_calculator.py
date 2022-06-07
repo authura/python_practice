@@ -15,7 +15,7 @@ try:
 
     #arguments in function call are not the same as the parameters
     #in function definition. These arguments are the inputs that
-    #we gathered from the user input.
+    #we gathered from the user.
     pay = compute_pay(hours, rate)
 
 
