@@ -9,4 +9,4 @@ if hours > 40:
 else:
     pay = hours * rate
 
-print(f"Gross pay: {pay}")
+print(f"Gross pay: {pay}\n")
