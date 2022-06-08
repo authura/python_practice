@@ -2,18 +2,25 @@ total = 0
 count = 0
 
 while True:
-    n_string = input("Enter a number: ")
-
-    if n_string == "done":
+    string = input("Enter a number: ")
+    
+    if string == "done":
         break
     
     try:
-        n = float(n_string)
-    except:
-        print("Invalid input. Please enter a number.")
-        continue
-    
-    total = total + n
-    count = count + 1
+        number = float(string)
 
+    except:
+        print("Invalid input.")
+
+        continue
+
+    total += number
+    count += 1
+
+
+average = total / count
+
+
+print(total, count, average)
 
