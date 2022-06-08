@@ -4,6 +4,9 @@ count = 0
 while True:
     n_string = input("Enter a number: ")
 
+    if n_string == "done":
+        break
+    
     try:
         n = float(n_string)
     except:
@@ -12,4 +15,5 @@ while True:
     
     total = total + n
     count = count + 1
+
 
